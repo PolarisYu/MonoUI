@@ -1,0 +1,3 @@
+D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir
+D:/Projects/MonoUI/build/CMakeFiles/edit_cache.dir
+D:/Projects/MonoUI/build/CMakeFiles/rebuild_cache.dir
