@@ -1,6 +1,4 @@
 #include "app_ui.h"
-#include "page_home.h"
-/* #include "page_settings.h" */  /* 暂时注释，等创建该文件后取消 */
 
 /* ── 5×8 1bpp 位图字体（ASCII 32–122），直接内嵌，无需外部依赖 ─────────── */
 static const uint8_t s_font5x8_data[] = {
@@ -111,19 +109,86 @@ const ui_font_t g_font = {
 /* ── 全局页面管理器 ──────────────────────────────────────────────────────── */
 ui_page_manager_t g_pm;
 
-void app_ui_init(ui_page_manager_t *pm) {
-    ui_page_manager_init(pm,
+void app_ui_init(void) {
+    const app_page_entry_t *pages;
+    size_t page_count;
+    size_t i;
+
+    ui_router_init();
+    ui_page_manager_init(&g_pm,
                           ui_core_get_main_canvas(),
                           ui_core_get_trans_canvas());
-    ui_core_set_page_manager(pm);
-    g_pm = *pm;
+    ui_core_set_page_manager(&g_pm);
 
-    page_home_build();
-    /* page_settings_build(); */   /* 等创建 page_settings 后取消注释 */
+    pages = app_pages_all(&page_count);
+    for (i = 0; i < page_count; ++i) {
+        if (pages[i].build) {
+            pages[i].build();
+        }
+    }
 
-    ui_page_push(&g_pm, &page_home, UI_TRANS_NONE, 0);
+    app_ui_push_id(APP_PAGE_HOME, UI_TRANS_NONE, 0);
 }
 
 void app_ui_tick(uint32_t delta_ms) {
     ui_core_tick(delta_ms);
+}
+
+const app_page_entry_t *app_ui_page_entry(app_page_id_t id) {
+    return app_page_entry(id);
+}
+
+ui_page_t *app_ui_page(app_page_id_t id) {
+    const app_page_entry_t *entry = app_ui_page_entry(id);
+    return entry ? entry->page : NULL;
+}
+
+void app_ui_push(ui_page_t *page, ui_trans_type_t trans, uint32_t duration_ms) {
+    ui_page_push(&g_pm, page, trans, duration_ms);
+}
+
+void app_ui_pop(ui_trans_type_t trans, uint32_t duration_ms) {
+    ui_page_pop(&g_pm, trans, duration_ms);
+}
+
+void app_ui_replace(ui_page_t *page, ui_trans_type_t trans, uint32_t duration_ms) {
+    ui_page_replace(&g_pm, page, trans, duration_ms);
+}
+
+void app_ui_push_id(app_page_id_t id, ui_trans_type_t trans, uint32_t duration_ms) {
+    ui_page_t *page = app_ui_page(id);
+    if (page) {
+        app_ui_push(page, trans, duration_ms);
+    }
+}
+
+void app_ui_replace_id(app_page_id_t id, ui_trans_type_t trans, uint32_t duration_ms) {
+    ui_page_t *page = app_ui_page(id);
+    if (page) {
+        app_ui_replace(page, trans, duration_ms);
+    }
+}
+
+ui_page_t *app_ui_current_page(void) {
+    return ui_page_current(&g_pm);
+}
+
+app_page_id_t app_ui_current_page_id(void) {
+    return app_page_id_from_page(app_ui_current_page());
+}
+
+bool app_ui_is_transitioning(void) {
+    return ui_page_is_transitioning(&g_pm);
+}
+
+/* ── 追加：翻译层接入 ────────────────────────────────────────────────────── */
+#include "ui_action.h"
+
+void app_ui_dispatch(const ui_event_t *evt) {
+    if (!evt || app_ui_is_transitioning()) {
+        return;
+    }
+
+    /* 当前页面的动作映射由 app_page_init() 绑定，切页时自动切换。 */
+    ui_router_dispatch(evt);
 }

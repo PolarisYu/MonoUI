@@ -1,0 +1,56 @@
+/build/
+/REFERENCE/
+
+# CMake build directories
+/cmake-build-*/
+/out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+build.ninja
+.ninja_deps
+.ninja_log
+compile_commands.json
+Testing/
+CTestTestfile.cmake
+install_manifest.txt
+
+# Build artifacts
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.elf
+*.bin
+*.hex
+*.map
+*.pdb
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE user-local files
+.idea/
+.vs/
+*.user
+*.suo
+*.vcxproj.user

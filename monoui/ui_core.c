@@ -21,9 +21,11 @@ static struct {
     ui_page_manager_t *page_manager;
     bool               force_redraw;
 
-    /* Simple single-slot event queue (add a ring buffer here if needed) */
-    ui_event_t  pending_event;
-    bool        has_pending_event;
+    /* FIFO queue for bursty input (e.g. encoder scroll) */
+    ui_event_t  event_queue[UI_EVENT_QUEUE_SIZE];
+    uint8_t     event_head;
+    uint8_t     event_tail;
+    uint8_t     event_count;
 } s_core;
 
 /* ─── Init ────────────────────────────────────────────────────────────────── */
@@ -55,9 +57,17 @@ void ui_core_invalidate(void) { s_core.force_redraw = true; }
 /* ─── Event queue ─────────────────────────────────────────────────────────── */
 
 void ui_core_push_event(const ui_event_t *evt) {
-    /* In a real system, replace with a lock-free ring buffer */
-    s_core.pending_event     = *evt;
-    s_core.has_pending_event = true;
+    if (!evt) return;
+
+    if (s_core.event_count >= UI_EVENT_QUEUE_SIZE) {
+        /* Keep the queue live under sustained input by dropping the oldest event. */
+        s_core.event_tail = (uint8_t)((s_core.event_tail + 1u) % UI_EVENT_QUEUE_SIZE);
+        s_core.event_count--;
+    }
+
+    s_core.event_queue[s_core.event_head] = *evt;
+    s_core.event_head = (uint8_t)((s_core.event_head + 1u) % UI_EVENT_QUEUE_SIZE);
+    s_core.event_count++;
 }
 
 /* ─── Main tick ───────────────────────────────────────────────────────────── */
@@ -75,9 +85,13 @@ void ui_core_tick(uint32_t delta_ms) {
     ui_anim_tick(delta_ms);
 
     /* ── 2. Events ────────────────────────────────────────────────────────── */
-    if (s_core.has_pending_event && s_core.page_manager) {
-        ui_page_dispatch_event(s_core.page_manager, &s_core.pending_event);
-        s_core.has_pending_event = false;
+    if (s_core.page_manager) {
+        while (s_core.event_count > 0u) {
+            const ui_event_t *evt = &s_core.event_queue[s_core.event_tail];
+            ui_page_dispatch_event(s_core.page_manager, evt);
+            s_core.event_tail = (uint8_t)((s_core.event_tail + 1u) % UI_EVENT_QUEUE_SIZE);
+            s_core.event_count--;
+        }
     }
 
     /* ── 3. Render ────────────────────────────────────────────────────────── */

@@ -9,6 +9,7 @@
 /* ─── Static pool limits (tune to your RAM budget) ───────────────────────── */
 #define UI_ANIM_POOL_SIZE  16u   /* max concurrent tweens                     */
 #define UI_PAGE_STACK_MAX   8u   /* max page navigation stack depth            */
+#define UI_EVENT_QUEUE_SIZE 16u  /* queued input events before oldest is dropped */
 
 /* ─── Transition ─────────────────────────────────────────────────────────── */
 #define UI_TRANS_DURATION_MS  300u  /* default page-switch animation duration  */

@@ -61,7 +61,7 @@ ui_canvas_t *ui_core_get_trans_canvas(void);
  *  delta_ms: milliseconds elapsed since the last call.                         */
 void ui_core_tick(uint32_t delta_ms);
 
-/*  Inject an input event (from ISR or task).                                   */
+/*  Queue an input event (from ISR or task). Events are delivered in FIFO order. */
 void ui_core_push_event(const ui_event_t *evt);
 
 /*  Force a full re-render even if nothing is dirty.                            */

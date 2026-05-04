@@ -1,5 +1,5 @@
 #pragma once
-#include "monoui.h"
+#include "app_pages.h"
 
 extern ui_page_t page_settings;
 

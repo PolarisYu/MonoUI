@@ -5,9 +5,33 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_EXTENSIONS OFF)
 
 # ── 路径配置 ──────────────────────────────────────────────────────────────────
-# CMakeLists.txt 位于 monoui_sim/，所以 .. 就是项目根目录
-set(MONOUI_DIR  "${CMAKE_CURRENT_SOURCE_DIR}/../monoui")
-set(APP_UI_DIR  "${CMAKE_CURRENT_SOURCE_DIR}/../app_ui")
+# CMakeLists.txt 位于 monoui_sim/，所以默认项目根目录在 ..
+set(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/..")
+
+set(MONOUI_DIR "${PROJECT_ROOT}/monoui" CACHE PATH
+    "Path to the monoui framework source directory")
+set(APP_UI_DIR "${PROJECT_ROOT}/app_ui" CACHE PATH
+    "Path to the app_ui source directory")
+
+if(NOT IS_ABSOLUTE "${MONOUI_DIR}")
+    get_filename_component(MONOUI_DIR "${MONOUI_DIR}" ABSOLUTE
+        BASE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
+endif()
+
+if(NOT IS_ABSOLUTE "${APP_UI_DIR}")
+    get_filename_component(APP_UI_DIR "${APP_UI_DIR}" ABSOLUTE
+        BASE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
+endif()
+
+if(NOT EXISTS "${MONOUI_DIR}/monoui.h")
+    message(FATAL_ERROR
+        "MONOUI_DIR is invalid: '${MONOUI_DIR}'. Expected a directory containing monoui.h")
+endif()
+
+if(NOT EXISTS "${APP_UI_DIR}/app_ui.h")
+    message(FATAL_ERROR
+        "APP_UI_DIR is invalid: '${APP_UI_DIR}'. Expected a directory containing app_ui.h")
+endif()
 
 # ── SDL2 ──────────────────────────────────────────────────────────────────────
 # 优先使用现代 SDL2 CMake config，回退到传统 FindSDL2
@@ -23,9 +47,12 @@ set(MONOUI_SRC
     "${MONOUI_DIR}/ui_widget.c"
     "${MONOUI_DIR}/ui_page.c"
     "${MONOUI_DIR}/ui_core.c"
+    "${MONOUI_DIR}/ui_action.c"
 )
 
 set(APP_UI_SRC
+    "${APP_UI_DIR}/app_page.c"
+    "${APP_UI_DIR}/app_pages.c"
     "${APP_UI_DIR}/app_ui.c"
     "${APP_UI_DIR}/page_home.c"
     # 新增页面在这里继续追加，例如：
@@ -62,7 +89,7 @@ target_compile_definitions(monoui_sim PRIVATE
 # ── 链接 SDL2 ─────────────────────────────────────────────────────────────────
 if(TARGET SDL2::SDL2)
     # 现代 CMake config 方式
-    target_link_libraries(monoui_sim PRIVATE SDL2::SDL2main SDL2::SDL2)
+    target_link_libraries(monoui_sim PRIVATE SDL2::SDL2)
 else()
     # 传统 FindSDL2 方式
     target_include_directories(monoui_sim PRIVATE ${SDL2_INCLUDE_DIRS})

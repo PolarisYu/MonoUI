@@ -1,12 +1,23 @@
 #include "page_settings.h"
+#include "app_ui.h"
 
 static ui_widget_t root;
 static ui_label_t  title;
 
 ui_page_t page_settings;
+static app_page_binding_t s_page_binding;
 
-extern ui_page_manager_t g_pm;
-extern const ui_font_t   g_font;
+static const ui_keymap_entry_t s_keymap[] = {
+    { UI_EVT_DPAD_LEFT,   UI_ANY_VALUE, UI_ACTION_CANCEL },
+    { UI_EVT_DPAD_CENTER, UI_ANY_VALUE, UI_ACTION_CANCEL },
+    UI_KEYMAP_END
+};
+
+static void on_action(ui_action_t action, const ui_event_t *raw, void *ctx) {
+    (void)raw; (void)ctx;
+    if (action == UI_ACTION_CANCEL)
+        app_ui_pop(UI_TRANS_SLIDE_RIGHT, UI_TRANS_DURATION_MS);
+}
 
 void page_settings_build(void) {
     ui_widget_init(&root, 0, 0, 256, 64, NULL);
@@ -16,5 +27,6 @@ void page_settings_build(void) {
                   UI_GRAY_WHITE, UI_GRAY_BLACK, true);
     ui_widget_add_child(&root, &title.base);
 
-    ui_page_init(&page_settings, &root, NULL, NULL);
+    app_page_init(&page_settings, &s_page_binding, &root,
+                  s_keymap, on_action, NULL, NULL, NULL);
 }

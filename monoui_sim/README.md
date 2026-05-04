@@ -78,7 +78,17 @@ cmake --build .
 monoui_sim.exe        # Windows
 ```
 
-如果 monoui 不在 `../monoui`，用 `-DMONOUI_DIR=<绝对路径>` 指定。
+默认情况下，CMake 会从 `../monoui` 和 `../app_ui` 取源码。
+如果目录不在默认位置，可以覆盖这两个缓存变量：
+
+```bash
+cmake .. \
+  -DMONOUI_DIR=/absolute/path/to/monoui \
+  -DAPP_UI_DIR=/absolute/path/to/app_ui
+```
+
+`MONOUI_DIR` 必须包含 `monoui.h`，`APP_UI_DIR` 必须包含 `app_ui.h`；
+路径无效时，配置阶段会直接报错。
 
 ---
 

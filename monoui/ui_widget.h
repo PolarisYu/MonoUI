@@ -26,6 +26,11 @@ typedef enum {
     UI_EVT_BTN_LONG_PRESS,
     UI_EVT_ENCODER_CW,      /* encoder clockwise step        */
     UI_EVT_ENCODER_CCW,     /* encoder counter-clockwise step */
+    UI_EVT_DPAD_UP,
+    UI_EVT_DPAD_DOWN,
+    UI_EVT_DPAD_LEFT,
+    UI_EVT_DPAD_RIGHT,
+    UI_EVT_DPAD_CENTER,
     UI_EVT_FOCUS_IN,
     UI_EVT_FOCUS_OUT,
 } ui_evt_type_t;

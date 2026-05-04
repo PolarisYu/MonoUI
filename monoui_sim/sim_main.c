@@ -13,7 +13,7 @@
  *    Escape                →  Back button (id 1)
  */
 
-// #define SDL_MAIN_HANDLED
+#define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include <string.h>
@@ -34,7 +34,7 @@
 #define DISP_H    ( 64 * SIM_SCALE)  /*  256 px */
 #define BEZEL_PAD 20                 /* space between display and bezel edge     */
 #define MARGIN    28                 /* outer window margin                      */
-#define CHROME_H  100                /* height of key-indicator strip below bezel */
+#define CHROME_H  130                /* height of key-indicator strip below bezel */
 
 #define WIN_W  (DISP_W + 2 * (BEZEL_PAD + MARGIN))
 #define WIN_H  (DISP_H + 2 * (BEZEL_PAD + MARGIN) + CHROME_H)
@@ -146,44 +146,72 @@ static void draw_key(int x, int y, int w, int h,
     SDL_RenderDrawRect(g_ren, &border);
 }
 
+/*
+ * Chrome 布局（对应真实硬件）：
+ *
+ *   左侧：旋转编码器  [Q/-/CCW]  [E/+/CW]
+ *   右侧：五向摇杆十字键
+ *                          [ ↑ W ]
+ *                  [ ← A ] [Spc ●] [ → D ]
+ *                          [ ↓ S ]
+ */
 static void draw_chrome_keys(const sim_input_state_t *inp) {
-    int bar_y  = DISP_Y + DISP_H + BEZEL_PAD + 18;
-    int key_h  = 36;
+    int base_y = DISP_Y + DISP_H + BEZEL_PAD + 12;
 
-    /* Section: Encoder (left side) */
-    int enc_x  = MARGIN;
-    int key_w  = 56;
-    int key_gap = 8;
+    /* ── 颜色 ─────────────────────────────────────────────────────────────── */
+    Color3 enc_col    = { 0x55, 0xAA, 0xFF };  /* 蓝：编码器          */
+    Color3 dpad_col   = { 0xDD, 0xAA, 0x33 };  /* 橙：摇杆方向        */
+    Color3 center_col = { 0x44, 0xDD, 0x77 };  /* 绿：摇杆中心按下    */
 
-    Color3 enc_col  = { 0x55, 0xAA, 0xFF };
-    Color3 ok_col   = { 0x44, 0xDD, 0x77 };
-    Color3 back_col = { 0xFF, 0x66, 0x44 };
+    /* ── 左侧：编码器两个方向 ────────────────────────────────────────────── */
+    int enc_w = 52, enc_h = 32, enc_gap = 6;
+    int enc_x = MARGIN;
+    int enc_y = base_y + 20;   /* 垂直居中对齐摇杆 */
 
-    draw_key(enc_x,                    bar_y, key_w, key_h,
-             inp->key_enc_ccw, enc_col, "CCW");
-    draw_key(enc_x + key_w + key_gap,  bar_y, key_w, key_h,
-             inp->key_enc_cw,  enc_col, "CW");
+    draw_key(enc_x,                 enc_y, enc_w, enc_h,
+             inp->enc_ccw, enc_col, "Q/-");
+    draw_key(enc_x + enc_w + enc_gap, enc_y, enc_w, enc_h,
+             inp->enc_cw,  enc_col, "E/+");
 
-    /* Section: Buttons (right side) */
-    int btn_x = WIN_W - MARGIN - 2 * (key_w + key_gap);
-    draw_key(btn_x,                    bar_y, key_w, key_h,
-             inp->key_ok,   ok_col,   "OK");
-    draw_key(btn_x + key_w + key_gap,  bar_y, key_w, key_h,
-             inp->key_back, back_col, "Back");
+    /* 编码器标识线 */
+    col(0x40, 0x40, 0x40, 0xFF);
+    fillr(enc_x, enc_y - 8, enc_w * 2 + enc_gap, 1);
 
-    /* Divider label area (no font, just decorative lines) */
-    col(0x35, 0x35, 0x35, 0xFF);
-    int mid_x = WIN_W / 2;
-    fillr(mid_x - 1, bar_y, 1, key_h);
+    /* ── 右侧：五向摇杆十字 ──────────────────────────────────────────────── */
+    int dw = 40, dh = 32, dgap = 4;
+    /* 十字中心锚点（在 chrome 区域中偏右） */
+    int cx = WIN_W - MARGIN - dw * 2 - dgap - dw / 2;
+    int cy = base_y + dh + dgap / 2;   /* 中行 Y */
+
+    /* 上 */
+    draw_key(cx - dw / 2,           base_y,       dw, dh,
+             inp->dpad_up,    dpad_col, "W");
+    /* 左 */
+    draw_key(cx - dw - dgap / 2 - dw/2, cy,       dw, dh,
+             inp->dpad_left,  dpad_col, "A");
+    /* 中（下压） */
+    draw_key(cx - dw / 2,           cy,            dw, dh,
+             inp->dpad_center, center_col, "Spc");
+    /* 右 */
+    draw_key(cx + dgap / 2 + dw/2,  cy,            dw, dh,
+             inp->dpad_right, dpad_col, "D");
+    /* 下 */
+    draw_key(cx - dw / 2,           cy + dh + dgap, dw, dh,
+             inp->dpad_down,  dpad_col, "S");
+
+    /* ── 分隔线 ──────────────────────────────────────────────────────────── */
+    col(0x30, 0x30, 0x30, 0xFF);
+    int mid = (enc_x + enc_w * 2 + enc_gap + cx - dw) / 2;
+    fillr(mid, base_y, 1, dh * 2 + dgap);
 }
 
 /* ─── FPS counter (window title) ──────────────────────────────────────────── */
 
 static void update_title(SDL_Window *win, uint32_t fps) {
-    char title[128];
+    char title[200];
     SDL_snprintf(title, sizeof(title),
-        "monoui Simulator  |  SSD1322 256×64 @ %u fps  |  "
-        "← → Encoder   Space/Enter OK   Esc Back",
+        "monoui Sim | SSD1322 256x64 | %u fps | "
+        "WASD/Arrows:Dpad  Spc:Center  Q/E or Scroll:Encoder",
         fps);
     SDL_SetWindowTitle(win, title);
 }
@@ -192,8 +220,7 @@ static void update_title(SDL_Window *win, uint32_t fps) {
 
 int main(int argc, char *argv[]) {
     (void)argc; (void)argv;
-
-    // SDL_SetMainReady();
+    SDL_SetMainReady();
 
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) < 0) {
         fprintf(stderr, "[sim] SDL_Init: %s\n", SDL_GetError());
@@ -264,10 +291,13 @@ int main(int argc, char *argv[]) {
             }
             sim_input_process(&e);
 
-            /* Forward generated UI events to monoui */
+            /* Forward generated UI events:
+               ① ui_core_push_event → widget 树
+               ② sim_app_on_event   → 翻译层 → 页面 on_action */
             ui_event_t ui_evt;
             if (sim_input_poll(&ui_evt)) {
                 ui_core_push_event(&ui_evt);
+                sim_app_on_event(&ui_evt);
             }
         }
 
