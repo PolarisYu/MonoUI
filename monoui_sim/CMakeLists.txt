@@ -54,12 +54,15 @@ set(APP_UI_SRC
     "${APP_UI_DIR}/app_page.c"
     "${APP_UI_DIR}/app_pages.c"
     "${APP_UI_DIR}/app_ui.c"
+    "${APP_UI_DIR}/boot/boot_status.c"
     "${APP_UI_DIR}/device/device_status.c"
     "${APP_UI_DIR}/home/home_state.c"
     "${APP_UI_DIR}/home/home_data.c"
     "${APP_UI_DIR}/settings/settings_state.c"
     "${APP_UI_DIR}/settings/settings_data.c"
+    "${APP_UI_DIR}/pages/boot/page_boot.c"
     "${APP_UI_DIR}/pages/home/page_home.c"
+    "${APP_UI_DIR}/pages/nav/page_nav.c"
     # 新增页面在 pages/<feature>/ 下继续追加，例如：
     "${APP_UI_DIR}/pages/settings/page_settings.c"
 )

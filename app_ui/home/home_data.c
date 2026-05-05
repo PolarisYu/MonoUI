@@ -12,7 +12,7 @@ static const home_tile_meta_t s_tile_meta[HOME_FOCUS_COUNT] = {
     { "INPUT",  "SRC",       APP_SETTINGS_SECTION_INPUT  },
     { "ASRC",   NULL,         APP_SETTINGS_SECTION_ASRC   },
     { "OUT",    "AMP",       APP_SETTINGS_SECTION_OUTPUT },
-    { "SYSTEM", NULL,         APP_SETTINGS_SECTION_SYSTEM },
+    { "NAV",    NULL,         APP_SETTINGS_SECTION_SYSTEM },
 };
 
 void home_data_top_bar(home_top_bar_data_t *out) {
@@ -46,9 +46,9 @@ void home_data_tile(home_focus_t focus, home_tile_data_t *out) {
         case HOME_FOCUS_OUTPUT:
             out->line1 = settings_data_home_output_text();
             break;
-        case HOME_FOCUS_SYSTEM:
+        case HOME_FOCUS_NAV:
         default:
-            out->line1 = device_status_system_summary();
+            out->line1 = "PAGES";
             break;
     }
 }

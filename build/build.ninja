@@ -57,8 +57,6 @@ build CMakeFiles/monoui_sim.dir/sim_main.c.obj: C_COMPILER__monoui_sim_unscanned
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/sim_hal.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui_sim/sim_hal.c || cmake_object_order_depends_target_monoui_sim
@@ -69,8 +67,6 @@ build CMakeFiles/monoui_sim.dir/sim_hal.c.obj: C_COMPILER__monoui_sim_unscanned_
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/sim_input.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui_sim/sim_input.c || cmake_object_order_depends_target_monoui_sim
@@ -81,8 +77,6 @@ build CMakeFiles/monoui_sim.dir/sim_input.c.obj: C_COMPILER__monoui_sim_unscanne
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/app/sim_app.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui_sim/app/sim_app.c || cmake_object_order_depends_target_monoui_sim
@@ -93,8 +87,6 @@ build CMakeFiles/monoui_sim.dir/app/sim_app.c.obj: C_COMPILER__monoui_sim_unscan
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\app
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_page.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/app_page.c || cmake_object_order_depends_target_monoui_sim
@@ -105,8 +97,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_page.c.obj: C_COMP
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_pages.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/app_pages.c || cmake_object_order_depends_target_monoui_sim
@@ -117,8 +107,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_pages.c.obj: C_COM
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_ui.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/app_ui.c || cmake_object_order_depends_target_monoui_sim
@@ -129,8 +117,16 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_ui.c.obj: C_COMPIL
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
+
+build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/boot/boot_status.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/boot/boot_status.c || cmake_object_order_depends_target_monoui_sim
+  CONFIG = Debug
+  DEFINES = -DUI_SIMULATOR=1
+  DEP_FILE = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\boot\boot_status.c.obj.d
+  FLAGS = -g -std=c99
+  INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
+  OBJECT_DIR = CMakeFiles\monoui_sim.dir
+  OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\boot
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/device/device_status.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/device/device_status.c || cmake_object_order_depends_target_monoui_sim
@@ -141,8 +137,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/device/device_status.c
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\device
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_state.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/home/home_state.c || cmake_object_order_depends_target_monoui_sim
@@ -153,8 +147,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_state.c.obj:
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\home
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_data.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/home/home_data.c || cmake_object_order_depends_target_monoui_sim
@@ -165,8 +157,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_data.c.obj: 
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\home
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_state.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/settings/settings_state.c || cmake_object_order_depends_target_monoui_sim
@@ -177,8 +167,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_stat
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\settings
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_data.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/settings/settings_data.c || cmake_object_order_depends_target_monoui_sim
@@ -189,8 +177,16 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_data
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\settings
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
+
+build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/boot/page_boot.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/pages/boot/page_boot.c || cmake_object_order_depends_target_monoui_sim
+  CONFIG = Debug
+  DEFINES = -DUI_SIMULATOR=1
+  DEP_FILE = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\pages\boot\page_boot.c.obj.d
+  FLAGS = -g -std=c99
+  INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
+  OBJECT_DIR = CMakeFiles\monoui_sim.dir
+  OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\pages\boot
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/home/page_home.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/pages/home/page_home.c || cmake_object_order_depends_target_monoui_sim
@@ -201,8 +197,16 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/home/page_home.c
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\pages\home
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
+
+build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/nav/page_nav.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/pages/nav/page_nav.c || cmake_object_order_depends_target_monoui_sim
+  CONFIG = Debug
+  DEFINES = -DUI_SIMULATOR=1
+  DEP_FILE = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\pages\nav\page_nav.c.obj.d
+  FLAGS = -g -std=c99
+  INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
+  OBJECT_DIR = CMakeFiles\monoui_sim.dir
+  OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\pages\nav
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/settings/page_settings.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/app_ui/pages/settings/page_settings.c || cmake_object_order_depends_target_monoui_sim
@@ -213,8 +217,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/settings/page_se
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\app_ui\pages\settings
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_canvas.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui/ui_canvas.c || cmake_object_order_depends_target_monoui_sim
@@ -225,8 +227,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_canvas.c.obj: C_COM
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\monoui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_anim.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui/ui_anim.c || cmake_object_order_depends_target_monoui_sim
@@ -237,8 +237,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_anim.c.obj: C_COMPI
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\monoui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_widget.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui/ui_widget.c || cmake_object_order_depends_target_monoui_sim
@@ -249,8 +247,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_widget.c.obj: C_COM
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\monoui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_page.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui/ui_page.c || cmake_object_order_depends_target_monoui_sim
@@ -261,8 +257,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_page.c.obj: C_COMPI
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\monoui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_core.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui/ui_core.c || cmake_object_order_depends_target_monoui_sim
@@ -273,8 +267,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_core.c.obj: C_COMPI
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\monoui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_action.c.obj: C_COMPILER__monoui_sim_unscanned_Debug D$:/Projects/MonoUI/monoui/ui_action.c || cmake_object_order_depends_target_monoui_sim
@@ -285,8 +277,6 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_action.c.obj: C_COM
   INCLUDES = -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   OBJECT_FILE_DIR = CMakeFiles\monoui_sim.dir\D_\Projects\MonoUI\monoui
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
-  TARGET_PDB = monoui_sim.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 
@@ -297,7 +287,7 @@ build CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_action.c.obj: C_COM
 #############################################
 # Link the executable monoui_sim.exe
 
-build monoui_sim.exe: C_EXECUTABLE_LINKER__monoui_sim_Debug CMakeFiles/monoui_sim.dir/sim_main.c.obj CMakeFiles/monoui_sim.dir/sim_hal.c.obj CMakeFiles/monoui_sim.dir/sim_input.c.obj CMakeFiles/monoui_sim.dir/app/sim_app.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_page.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_pages.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_ui.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/device/device_status.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_state.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_data.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_state.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_data.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/home/page_home.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/settings/page_settings.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_canvas.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_anim.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_widget.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_page.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_core.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_action.c.obj | C$:/msys64/mingw64/lib/libSDL2.dll.a
+build monoui_sim.exe: C_EXECUTABLE_LINKER__monoui_sim_Debug CMakeFiles/monoui_sim.dir/sim_main.c.obj CMakeFiles/monoui_sim.dir/sim_hal.c.obj CMakeFiles/monoui_sim.dir/sim_input.c.obj CMakeFiles/monoui_sim.dir/app/sim_app.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_page.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_pages.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_ui.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/boot/boot_status.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/device/device_status.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_state.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_data.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_state.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_data.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/boot/page_boot.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/home/page_home.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/nav/page_nav.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/settings/page_settings.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_canvas.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_anim.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_widget.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_page.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_core.c.obj CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_action.c.obj | C$:/msys64/mingw64/lib/libSDL2.dll.a
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = -mconsole
@@ -305,10 +295,9 @@ build monoui_sim.exe: C_EXECUTABLE_LINKER__monoui_sim_Debug CMakeFiles/monoui_si
   OBJECT_DIR = CMakeFiles\monoui_sim.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\monoui_sim.dir\
   TARGET_FILE = monoui_sim.exe
   TARGET_IMPLIB = libmonoui_sim.dll.a
-  TARGET_PDB = monoui_sim.pdb
+  TARGET_PDB = monoui_sim.exe.dbg
   TARGET_SUPPORT_DIR = CMakeFiles\monoui_sim.dir
 
 
@@ -356,14 +345,14 @@ build all: phony monoui_sim.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja D$:/Projects/MonoUI/build/cmake_install.cmake: RERUN_CMAKE | C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Config.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2ConfigVersion.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2mainTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2mainTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/sdlfind.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/mingw64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/FeatureSummary.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake D$:/Projects/MonoUI/monoui_sim/CMakeLists.txt
+build build.ninja D$:/Projects/MonoUI/build/cmake_install.cmake: RERUN_CMAKE | C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Config.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2ConfigVersion.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2mainTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2mainTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/sdlfind.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/FeatureSummary.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake D$:/Projects/MonoUI/monoui_sim/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Config.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2ConfigVersion.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2mainTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2mainTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/sdlfind.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/mingw64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/mingw64/share/cmake/Modules/FeatureSummary.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeInspectCLinker.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake D$:/Projects/MonoUI/monoui_sim/CMakeLists.txt: phony
+build C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Config.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2ConfigVersion.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2Targets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2mainTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2mainTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2staticTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets-release.cmake C$:/msys64/mingw64/lib/cmake/SDL2/SDL2testTargets.cmake C$:/msys64/mingw64/lib/cmake/SDL2/sdlfind.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/FeatureSummary.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/mingw64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeRCCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake D$:/Projects/MonoUI/monoui_sim/CMakeLists.txt: phony
 
 
 #############################################

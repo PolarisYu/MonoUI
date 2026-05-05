@@ -87,14 +87,22 @@ void ui_page_push(ui_page_manager_t *pm, ui_page_t *page,
 
 void ui_page_pop(ui_page_manager_t *pm,
                  ui_trans_type_t trans, uint32_t duration_ms) {
+    bool instant;
+
     if (pm->state == UI_PM_TRANSITIONING) return;
     if (pm->stack_top <= 0) return;   /* nothing to pop */
 
     ui_page_t *outgoing = pm->stack[pm->stack_top];
     pm->stack_top--;
     ui_page_t *incoming = pm->stack[pm->stack_top];
+    instant = (trans == UI_TRANS_NONE || duration_ms == 0);
 
     _begin_transition(pm, outgoing, incoming, trans, duration_ms, false);
+
+    if (instant) {
+        return;
+    }
+
     /* Remove the popped page from the stack after transition completes.
        We defer the actual pop until finish so we can still render it.
        Re-increment temporarily so outgoing stays accessible. */

@@ -4,7 +4,9 @@
 #include "monoui.h"
 
 typedef enum {
-    APP_PAGE_HOME = 0,
+    APP_PAGE_BOOT = 0,
+    APP_PAGE_HOME,
+    APP_PAGE_NAV,
     APP_PAGE_SETTINGS,
     APP_PAGE_SETTINGS_SECTION,
     APP_PAGE_COUNT

@@ -7,6 +7,7 @@
 
 /* 全局字体 */
 extern const ui_font_t   g_font;
+extern const ui_font_t   g_font_mini;
 
 /* 全局页面管理器 */
 extern ui_page_manager_t g_pm;

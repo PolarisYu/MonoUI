@@ -4,7 +4,7 @@ typedef enum {
     HOME_FOCUS_INPUT = 0,
     HOME_FOCUS_ASRC,
     HOME_FOCUS_OUTPUT,
-    HOME_FOCUS_SYSTEM,
+    HOME_FOCUS_NAV,
     HOME_FOCUS_COUNT
 } home_focus_t;
 
