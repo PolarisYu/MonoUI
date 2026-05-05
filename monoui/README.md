@@ -41,7 +41,9 @@
 | `ui_page.h/.c` | 页面导航栈、FADE/SLIDE_LEFT/SLIDE_RIGHT转场 |
 | `ui_core.h/.c` | 拥有两个帧缓冲，驱动主Tick循环 |
 | `monoui.h` | 总头文件（单include入口） |
-| `example_main.c` | 完整接入示例 |
+| `example_main.c` | 示例入口说明 |
+| `example_baremetal_main.c` | 裸机 / super-loop 接入模板 |
+| `example_rtos_task.c` | RTOS 任务接入模板 |
 
 ---
 

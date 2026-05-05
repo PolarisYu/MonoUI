@@ -1,4 +1,5 @@
 #include "app_ui.h"
+#include <string.h>
 
 /* ── 5×8 1bpp 位图字体（ASCII 32–122），直接内嵌，无需外部依赖 ─────────── */
 static const uint8_t s_font5x8_data[] = {
@@ -109,16 +110,113 @@ const ui_font_t g_font = {
 /* ── 全局页面管理器 ──────────────────────────────────────────────────────── */
 ui_page_manager_t g_pm;
 
+typedef struct {
+    bool             visible;
+    app_ui_popup_cb_t cb;
+    void            *ctx;
+    char             title[24];
+    char             message[40];
+    ui_widget_t      root;
+    ui_rect_t        panel;
+    ui_rect_t        title_bar;
+    ui_label_t       title_label;
+    ui_label_t       message_label;
+    ui_label_t       hint_label;
+} app_ui_popup_t;
+
+static app_ui_popup_t s_popup;
+
+static void app_ui_render_overlay(ui_canvas_t *canvas, void *ctx) {
+    app_ui_popup_t *popup = (app_ui_popup_t *)ctx;
+    if (!popup || !popup->visible) {
+        return;
+    }
+    ui_canvas_apply_dim(canvas, 7);
+    ui_widget_render(&popup->root, canvas, 0, 0);
+}
+
+static void app_ui_popup_init(void) {
+    ui_widget_init(&s_popup.root, 0, 0, 256, 64, NULL);
+
+    ui_rect_init(&s_popup.panel, 24, 12, 208, 40, UI_GRAY_BLACK);
+    s_popup.panel.border_w = 1;
+    s_popup.panel.border_gray = UI_GRAY_WHITE;
+    ui_widget_add_child(&s_popup.root, &s_popup.panel.base);
+
+    ui_rect_init(&s_popup.title_bar, 24, 12, 208, 10, UI_GRAY_WHITE);
+    ui_widget_add_child(&s_popup.root, &s_popup.title_bar.base);
+
+    ui_label_init(&s_popup.title_label, 30, 13, 196, 8,
+                  "NOTICE", &g_font,
+                  UI_GRAY_BLACK, UI_GRAY_WHITE, true);
+    ui_widget_add_child(&s_popup.root, &s_popup.title_label.base);
+
+    ui_label_init(&s_popup.message_label, 34, 28, 188, 8,
+                  "", &g_font,
+                  UI_GRAY_WHITE, UI_GRAY_BLACK, true);
+    s_popup.message_label.align = UI_ALIGN_CENTER;
+    ui_widget_add_child(&s_popup.root, &s_popup.message_label.base);
+
+    ui_label_init(&s_popup.hint_label, 34, 40, 188, 8,
+                  "LEFT CANCEL   CTR OK", &g_font,
+                  UI_GRAY_LIGHT, UI_GRAY_BLACK, true);
+    s_popup.hint_label.align = UI_ALIGN_CENTER;
+    ui_widget_add_child(&s_popup.root, &s_popup.hint_label.base);
+}
+
+void app_ui_popup_show(const char *title,
+                       const char *message,
+                       app_ui_popup_cb_t cb,
+                       void *ctx) {
+    s_popup.cb = cb;
+    s_popup.ctx = ctx;
+    s_popup.visible = true;
+
+    strncpy(s_popup.title, title ? title : "NOTICE", sizeof(s_popup.title) - 1u);
+    s_popup.title[sizeof(s_popup.title) - 1u] = '\0';
+    strncpy(s_popup.message, message ? message : "", sizeof(s_popup.message) - 1u);
+    s_popup.message[sizeof(s_popup.message) - 1u] = '\0';
+
+    ui_label_set_text(&s_popup.title_label, s_popup.title);
+    ui_label_set_text(&s_popup.message_label, s_popup.message);
+
+    s_popup.panel.base.offset_y = 4.f;
+    s_popup.title_label.base.alpha = 0.f;
+    s_popup.message_label.base.alpha = 0.f;
+    s_popup.hint_label.base.alpha = 0.f;
+
+    ui_widget_animate(&s_popup.panel.base.offset_y, 4.f, 0.f, 180,
+                      ui_ease_out_cubic, NULL, NULL);
+    ui_widget_animate(&s_popup.title_label.base.alpha, 0.f, 1.f, 180,
+                      ui_ease_out_cubic, NULL, NULL);
+    ui_widget_animate(&s_popup.message_label.base.alpha, 0.f, 1.f, 220,
+                      ui_ease_out_cubic, NULL, NULL);
+    ui_widget_animate(&s_popup.hint_label.base.alpha, 0.f, 1.f, 260,
+                      ui_ease_out_cubic, NULL, NULL);
+}
+
+void app_ui_popup_hide(void) {
+    s_popup.visible = false;
+    s_popup.cb = NULL;
+    s_popup.ctx = NULL;
+}
+
+bool app_ui_popup_visible(void) {
+    return s_popup.visible;
+}
+
 void app_ui_init(void) {
     const app_page_entry_t *pages;
     size_t page_count;
     size_t i;
 
     ui_router_init();
+    app_ui_popup_init();
     ui_page_manager_init(&g_pm,
                           ui_core_get_main_canvas(),
                           ui_core_get_trans_canvas());
     ui_core_set_page_manager(&g_pm);
+    ui_core_set_overlay_renderer(app_ui_render_overlay, &s_popup);
 
     pages = app_pages_all(&page_count);
     for (i = 0; i < page_count; ++i) {
@@ -186,6 +284,21 @@ bool app_ui_is_transitioning(void) {
 
 void app_ui_dispatch(const ui_event_t *evt) {
     if (!evt || app_ui_is_transitioning()) {
+        return;
+    }
+
+    if (app_ui_popup_visible()) {
+        if (evt->type == UI_EVT_DPAD_LEFT) {
+            app_ui_popup_cb_t cb = s_popup.cb;
+            void *ctx = s_popup.ctx;
+            app_ui_popup_hide();
+            if (cb) cb(false, ctx);
+        } else if (evt->type == UI_EVT_DPAD_CENTER || evt->type == UI_EVT_DPAD_RIGHT) {
+            app_ui_popup_cb_t cb = s_popup.cb;
+            void *ctx = s_popup.ctx;
+            app_ui_popup_hide();
+            if (cb) cb(true, ctx);
+        }
         return;
     }
 

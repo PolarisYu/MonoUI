@@ -122,6 +122,13 @@ ui_anim_id_t ui_widget_animate(float *prop, float from, float to,
     ui_anim_id_t id = ui_anim_create(prop, from, to, dur_ms, 0,
                                       ease ? ease : ui_ease_out_cubic,
                                       cb, ctx);
+    if (id == UI_ANIM_INVALID) {
+        /* Fail soft when the pool is exhausted: keep UI state correct even if
+           the transition has to snap instead of animate. */
+        if (prop) *prop = to;
+        if (cb) cb(ctx);
+        return id;
+    }
     ui_anim_start(id);
     return id;
 }

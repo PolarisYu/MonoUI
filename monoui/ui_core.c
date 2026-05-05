@@ -19,6 +19,8 @@ static struct {
     ui_hal_flush_fn    flush_fn;
     void              *user_ctx;
     ui_page_manager_t *page_manager;
+    ui_overlay_render_fn overlay_render_fn;
+    void              *overlay_ctx;
     bool               force_redraw;
 
     /* FIFO queue for bursty input (e.g. encoder scroll) */
@@ -47,6 +49,11 @@ void ui_core_init(ui_hal_flush_fn flush_fn, void *user_ctx) {
 
 void ui_core_set_page_manager(ui_page_manager_t *pm) {
     s_core.page_manager = pm;
+}
+
+void ui_core_set_overlay_renderer(ui_overlay_render_fn render_fn, void *ctx) {
+    s_core.overlay_render_fn = render_fn;
+    s_core.overlay_ctx = ctx;
 }
 
 ui_canvas_t *ui_core_get_main_canvas(void)  { return &s_main_canvas;  }
@@ -97,6 +104,9 @@ void ui_core_tick(uint32_t delta_ms) {
     /* ── 3. Render ────────────────────────────────────────────────────────── */
     if (s_core.page_manager) {
         ui_page_manager_render(s_core.page_manager);
+    }
+    if (s_core.overlay_render_fn) {
+        s_core.overlay_render_fn(&s_main_canvas, s_core.overlay_ctx);
     }
 
     /* ── 4. HAL flush ─────────────────────────────────────────────────────── */

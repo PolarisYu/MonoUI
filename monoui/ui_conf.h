@@ -7,7 +7,7 @@
 #define UI_FB_SIZE         (UI_FB_STRIDE * UI_SCREEN_H) /* 8192 bytes total   */
 
 /* ─── Static pool limits (tune to your RAM budget) ───────────────────────── */
-#define UI_ANIM_POOL_SIZE  16u   /* max concurrent tweens                     */
+#define UI_ANIM_POOL_SIZE  32u   /* max concurrent tweens                     */
 #define UI_PAGE_STACK_MAX   8u   /* max page navigation stack depth            */
 #define UI_EVENT_QUEUE_SIZE 16u  /* queued input events before oldest is dropped */
 

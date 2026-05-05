@@ -307,6 +307,16 @@ int main(int argc, char *argv[]) {
         last_ticks     = now;
         if (delta > 100) delta = 100;   /* clamp for debugger / sleep */
 
+        /* 允许长按在“没有新的 SDL 事件”时也能按帧触发。 */
+        sim_input_tick();
+        {
+            ui_event_t ui_evt;
+            if (sim_input_poll(&ui_evt)) {
+                ui_core_push_event(&ui_evt);
+                sim_app_on_event(&ui_evt);
+            }
+        }
+
         sim_app_tick(delta);            /* <- calls ui_core_tick() */
 
         /* ── 3. Render window ────────────────────────────────────────────── */

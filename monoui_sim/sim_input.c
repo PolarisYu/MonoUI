@@ -143,7 +143,21 @@ void sim_input_process(const SDL_Event *e) {
     default: break;
     }
 
-    /* ── 长按检测（每次 process 都检查，不依赖独立定时器）────────────────── */
+    /* 某些平台在按住按键静止时不会持续产生 SDL 事件，这里保留一次检查，
+       真正兜底由 sim_input_tick() 在每帧调用。 */
+    if (s_center_held && !s_long_fired) {
+        if (SDL_GetTicks() - s_center_down_ms >= LONG_PRESS_MS) {
+            s_long_fired = true;
+            _push(UI_EVT_BTN_LONG_PRESS, 0);
+        }
+    }
+}
+
+void sim_input_tick(void) {
+    s_state.event_pending = false;
+    s_state.enc_cw  = false;
+    s_state.enc_ccw = false;
+
     if (s_center_held && !s_long_fired) {
         if (SDL_GetTicks() - s_center_down_ms >= LONG_PRESS_MS) {
             s_long_fired = true;

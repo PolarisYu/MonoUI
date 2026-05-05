@@ -42,6 +42,8 @@ typedef void (*ui_hal_flush_fn)(const uint8_t *buf,
                                  uint16_t x2, uint16_t y2,
                                  void *ctx);
 
+typedef void (*ui_overlay_render_fn)(ui_canvas_t *canvas, void *ctx);
+
 /* ─── Core API ────────────────────────────────────────────────────────────── */
 
 /*  Initialise the core, register the HAL flush callback.
@@ -52,6 +54,7 @@ void ui_core_init(ui_hal_flush_fn flush_fn, void *user_ctx);
  *  The page manager must have been initialised with ui_page_manager_init()
  *  pointing at ui_core_get_main_canvas() and ui_core_get_trans_canvas().      */
 void ui_core_set_page_manager(ui_page_manager_t *pm);
+void ui_core_set_overlay_renderer(ui_overlay_render_fn render_fn, void *ctx);
 
 /*  Access the core-owned canvases (use these when calling ui_page_manager_init). */
 ui_canvas_t *ui_core_get_main_canvas (void);

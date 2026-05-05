@@ -54,9 +54,14 @@ set(APP_UI_SRC
     "${APP_UI_DIR}/app_page.c"
     "${APP_UI_DIR}/app_pages.c"
     "${APP_UI_DIR}/app_ui.c"
-    "${APP_UI_DIR}/page_home.c"
-    # 新增页面在这里继续追加，例如：
-    "${APP_UI_DIR}/page_settings.c"
+    "${APP_UI_DIR}/device/device_status.c"
+    "${APP_UI_DIR}/home/home_state.c"
+    "${APP_UI_DIR}/home/home_data.c"
+    "${APP_UI_DIR}/settings/settings_state.c"
+    "${APP_UI_DIR}/settings/settings_data.c"
+    "${APP_UI_DIR}/pages/home/page_home.c"
+    # 新增页面在 pages/<feature>/ 下继续追加，例如：
+    "${APP_UI_DIR}/pages/settings/page_settings.c"
 )
 
 set(SIM_SRC
@@ -78,7 +83,10 @@ target_include_directories(monoui_sim PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}"        # sim_hal.h, sim_input.h
     "${CMAKE_CURRENT_SOURCE_DIR}/app"    # sim_app.h
     "${MONOUI_DIR}"                      # monoui.h 及所有 ui_*.h
-    "${APP_UI_DIR}"                      # app_ui.h, page_home.h 等
+    "${APP_UI_DIR}"                      # app_ui.h, app_pages.h 等
+    "${APP_UI_DIR}/device"               # device_status.h
+    "${APP_UI_DIR}/pages"                # pages/<feature>/page_*.h
+    "${APP_UI_DIR}/settings"             # settings_data.h, settings_state.h
 )
 
 # ── 宏定义 ────────────────────────────────────────────────────────────────────

@@ -25,5 +25,14 @@ ui_page_t *app_ui_current_page(void);
 app_page_id_t app_ui_current_page_id(void);
 bool app_ui_is_transitioning(void);
 
+typedef void (*app_ui_popup_cb_t)(bool confirmed, void *ctx);
+
+void app_ui_popup_show(const char *title,
+                       const char *message,
+                       app_ui_popup_cb_t cb,
+                       void *ctx);
+void app_ui_popup_hide(void);
+bool app_ui_popup_visible(void);
+
 /* 供页面调用：喂入物理事件，经翻译层后分发给当前页面的 on_action */
 void app_ui_dispatch(const ui_event_t *evt);

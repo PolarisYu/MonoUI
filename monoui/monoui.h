@@ -8,3 +8,4 @@
 #include "ui_widget.h"
 #include "ui_page.h"
 #include "ui_core.h"
+#include "ui_action.h"

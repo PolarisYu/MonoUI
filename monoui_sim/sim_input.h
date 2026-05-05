@@ -23,5 +23,6 @@ typedef struct {
 
 void sim_input_init(void);
 void sim_input_process(const SDL_Event *e);
+void sim_input_tick(void);
 bool sim_input_poll(ui_event_t *out);
 const sim_input_state_t *sim_input_state(void);

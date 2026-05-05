@@ -1,91 +1,121 @@
 [
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\sim_main.c.obj -c D:\\Projects\\MonoUI\\monoui_sim\\sim_main.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\sim_main.c.obj -c D:\\Projects\\MonoUI\\monoui_sim\\sim_main.c",
   "file": "D:/Projects/MonoUI/monoui_sim/sim_main.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/sim_main.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\sim_hal.c.obj -c D:\\Projects\\MonoUI\\monoui_sim\\sim_hal.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\sim_hal.c.obj -c D:\\Projects\\MonoUI\\monoui_sim\\sim_hal.c",
   "file": "D:/Projects/MonoUI/monoui_sim/sim_hal.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/sim_hal.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\sim_input.c.obj -c D:\\Projects\\MonoUI\\monoui_sim\\sim_input.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\sim_input.c.obj -c D:\\Projects\\MonoUI\\monoui_sim\\sim_input.c",
   "file": "D:/Projects/MonoUI/monoui_sim/sim_input.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/sim_input.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\app\\sim_app.c.obj -c D:\\Projects\\MonoUI\\monoui_sim\\app\\sim_app.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\app\\sim_app.c.obj -c D:\\Projects\\MonoUI\\monoui_sim\\app\\sim_app.c",
   "file": "D:/Projects/MonoUI/monoui_sim/app/sim_app.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/app/sim_app.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\app_page.c.obj -c D:\\Projects\\MonoUI\\app_ui\\app_page.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\app_page.c.obj -c D:\\Projects\\MonoUI\\app_ui\\app_page.c",
   "file": "D:/Projects/MonoUI/app_ui/app_page.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_page.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\app_pages.c.obj -c D:\\Projects\\MonoUI\\app_ui\\app_pages.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\app_pages.c.obj -c D:\\Projects\\MonoUI\\app_ui\\app_pages.c",
   "file": "D:/Projects/MonoUI/app_ui/app_pages.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_pages.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\app_ui.c.obj -c D:\\Projects\\MonoUI\\app_ui\\app_ui.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\app_ui.c.obj -c D:\\Projects\\MonoUI\\app_ui\\app_ui.c",
   "file": "D:/Projects/MonoUI/app_ui/app_ui.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/app_ui.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\page_home.c.obj -c D:\\Projects\\MonoUI\\app_ui\\page_home.c",
-  "file": "D:/Projects/MonoUI/app_ui/page_home.c",
-  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/page_home.c.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\device\\device_status.c.obj -c D:\\Projects\\MonoUI\\app_ui\\device\\device_status.c",
+  "file": "D:/Projects/MonoUI/app_ui/device/device_status.c",
+  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/device/device_status.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\page_settings.c.obj -c D:\\Projects\\MonoUI\\app_ui\\page_settings.c",
-  "file": "D:/Projects/MonoUI/app_ui/page_settings.c",
-  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/page_settings.c.obj"
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\home\\home_state.c.obj -c D:\\Projects\\MonoUI\\app_ui\\home\\home_state.c",
+  "file": "D:/Projects/MonoUI/app_ui/home/home_state.c",
+  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_state.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_canvas.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_canvas.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\home\\home_data.c.obj -c D:\\Projects\\MonoUI\\app_ui\\home\\home_data.c",
+  "file": "D:/Projects/MonoUI/app_ui/home/home_data.c",
+  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/home/home_data.c.obj"
+},
+{
+  "directory": "D:/Projects/MonoUI/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\settings\\settings_state.c.obj -c D:\\Projects\\MonoUI\\app_ui\\settings\\settings_state.c",
+  "file": "D:/Projects/MonoUI/app_ui/settings/settings_state.c",
+  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_state.c.obj"
+},
+{
+  "directory": "D:/Projects/MonoUI/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\settings\\settings_data.c.obj -c D:\\Projects\\MonoUI\\app_ui\\settings\\settings_data.c",
+  "file": "D:/Projects/MonoUI/app_ui/settings/settings_data.c",
+  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/settings/settings_data.c.obj"
+},
+{
+  "directory": "D:/Projects/MonoUI/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\pages\\home\\page_home.c.obj -c D:\\Projects\\MonoUI\\app_ui\\pages\\home\\page_home.c",
+  "file": "D:/Projects/MonoUI/app_ui/pages/home/page_home.c",
+  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/home/page_home.c.obj"
+},
+{
+  "directory": "D:/Projects/MonoUI/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\app_ui\\pages\\settings\\page_settings.c.obj -c D:\\Projects\\MonoUI\\app_ui\\pages\\settings\\page_settings.c",
+  "file": "D:/Projects/MonoUI/app_ui/pages/settings/page_settings.c",
+  "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/app_ui/pages/settings/page_settings.c.obj"
+},
+{
+  "directory": "D:/Projects/MonoUI/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_canvas.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_canvas.c",
   "file": "D:/Projects/MonoUI/monoui/ui_canvas.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_canvas.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_anim.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_anim.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_anim.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_anim.c",
   "file": "D:/Projects/MonoUI/monoui/ui_anim.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_anim.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_widget.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_widget.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_widget.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_widget.c",
   "file": "D:/Projects/MonoUI/monoui/ui_widget.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_widget.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_page.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_page.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_page.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_page.c",
   "file": "D:/Projects/MonoUI/monoui/ui_page.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_page.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_core.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_core.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_core.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_core.c",
   "file": "D:/Projects/MonoUI/monoui/ui_core.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_core.c.obj"
 },
 {
   "directory": "D:/Projects/MonoUI/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_action.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_action.c",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DUI_SIMULATOR=1 -ID:/Projects/MonoUI/monoui_sim -ID:/Projects/MonoUI/monoui_sim/app -ID:/Projects/MonoUI/monoui_sim/../monoui -ID:/Projects/MonoUI/monoui_sim/../app_ui -ID:/Projects/MonoUI/monoui_sim/../app_ui/device -ID:/Projects/MonoUI/monoui_sim/../app_ui/pages -ID:/Projects/MonoUI/monoui_sim/../app_ui/settings -isystem C:/msys64/mingw64/include/SDL2 -g -std=c99 -o CMakeFiles\\monoui_sim.dir\\D_\\Projects\\MonoUI\\monoui\\ui_action.c.obj -c D:\\Projects\\MonoUI\\monoui\\ui_action.c",
   "file": "D:/Projects/MonoUI/monoui/ui_action.c",
   "output": "D:/Projects/MonoUI/build/CMakeFiles/monoui_sim.dir/D_/Projects/MonoUI/monoui/ui_action.c.obj"
 }
